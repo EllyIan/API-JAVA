@@ -62,7 +62,7 @@ The API will return a JSON response in the following format:
 {
   "email": "nicanorkyamba98@gmail.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/NICANORKYAMBA/hng12-backend-api"
+  "github_url": "https://github.com/NICANORKYAMBA/task-zero"
 }
 ```
 
