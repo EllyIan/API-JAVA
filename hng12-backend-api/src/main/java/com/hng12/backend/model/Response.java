@@ -16,10 +16,10 @@ public class Response {
     }
 
     public String getCurrentDatetime() {
-        return currentDatetime;
+        return current_datetime;
     }
 
     public String getGithubUrl() {
-        return githubUrl;
+        return git_hubUrl;
     }
 }
