@@ -2,13 +2,13 @@ package com.hng12.backend.model;
 
 public class Response {
     private String email;
-    private String currentDatetime;
-    private String githubUrl;
+    private String current_datetime;
+    private String github_url;
 
-    public Response(String email, String currentDatetime, String githubUrl) {
+    public Response(String email, String current_datetime, String github_url) {
         this.email = email;
-        this.currentDatetime = currentDatetime;
-        this.githubUrl = githubUrl;
+        this.current_datetime = current_datetime;
+        this.github_url = github_url;
     }
 
     public String getEmail() {
@@ -20,6 +20,6 @@ public class Response {
     }
 
     public String getGithubUrl() {
-        return git_hubUrl;
+        return github_url;
     }
 }
