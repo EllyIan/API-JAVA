@@ -15,11 +15,11 @@ public class Response {
         return email;
     }
 
-    public String getCurrentDatetime() {
+    public String getcurrent_datetime() {
         return current_datetime;
     }
 
-    public String getGithubUrl() {
+    public String getgithub_url() {
         return github_url;
     }
 }
