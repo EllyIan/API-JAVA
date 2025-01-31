@@ -11,7 +11,7 @@ public class Response {
         this.github_url = github_url;
     }
 
-    public String getEmail() {
+    public String getemail() {
         return email;
     }
 
