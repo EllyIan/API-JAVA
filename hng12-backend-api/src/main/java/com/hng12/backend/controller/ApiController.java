@@ -23,7 +23,7 @@ public class ApiController {
     public ResponseEntity<Response> getInfo() {
         try {
             Response response = apiService.getResponse();
-            if (response.getEmail() == null || response.getCurrentDatetime() == null || response.getGithubUrl() == null) {
+            if (response.getemail() == null || response.getcurrent_datetime() == null || response.getgithub_url() == null) {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Missing required parameters");
             }
             return new ResponseEntity<>(response, HttpStatus.OK);
