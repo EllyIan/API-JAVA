@@ -11,7 +11,7 @@ import com.hng12.backend.model.Response;
 public class ApiService {
 
     public Response getResponse() {
-        String email = "ianmongi45@gmail.com@gmail.com";
+        String email = "ianmongi45@gmail.com";
         String current_datetime = ZonedDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
         String github_url = "https://github.com/Ellyian/API-JAVA";
 
