@@ -25,42 +25,42 @@ public class ApiControllerTest {
 
     @Test
     public void testGetInfo() throws Exception {
-        Response response = new Response("nicanorkyamba98@gmail.com", "2025-01-30T09:30:00Z", "https://github.com/NICANORKYAMBA/hng12-backend-api");
+        Response response = new Response("ianmongi45@gmail.com", "2025-01-30T09:30:00Z", "https://github.com/Ellyian/hng12-backend-api");
         when(apiService.getResponse()).thenReturn(response);
 
         mockMvc.perform(get("/api"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"email\":\"nicanorkyamba98@gmail.com\",\"currentDatetime\":\"2025-01-30T09:30:00Z\",\"githubUrl\":\"https://github.com/NICANORKYAMBA/hng12-backend-api\"}"));
+                .andExpect(content().json("{\"email\":\"ianmongi45@gmail.com\",\"currentDatetime\":\"2025-01-30T09:30:00Z\",\"githubUrl\":\"https://github.com/Ellyian/hng12-backend-api\"}"));
     }
 
     @Test
     public void testGetInfoWithDifferentEmail() throws Exception {
-        Response response = new Response("different-email@example.com", "2025-01-30T09:30:00Z", "https://github.com/NICANORKYAMBA/hng12-backend-api");
+        Response response = new Response("different-email@example.com", "2025-01-30T09:30:00Z", "https://github.com/Ellyian/hng12-backend-api");
         when(apiService.getResponse()).thenReturn(response);
 
         mockMvc.perform(get("/api"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"email\":\"different-email@example.com\",\"currentDatetime\":\"2025-01-30T09:30:00Z\",\"githubUrl\":\"https://github.com/NICANORKYAMBA/hng12-backend-api\"}"));
+                .andExpect(content().json("{\"email\":\"different-email@example.com\",\"currentDatetime\":\"2025-01-30T09:30:00Z\",\"githubUrl\":\"https://github.com/Ellyian/hng12-backend-api\"}"));
     }
 
     @Test
     public void testGetInfoWithDifferentDatetime() throws Exception {
-        Response response = new Response("nicanorkyamba98@gmail.com", "2025-02-01T10:00:00Z", "https://github.com/NICANORKYAMBA/hng12-backend-api");
+        Response response = new Response("ianmongi45@gmail.com", "2025-02-01T10:00:00Z", "https://github.com/Ellyian/hng12-backend-api");
         when(apiService.getResponse()).thenReturn(response);
 
         mockMvc.perform(get("/api"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"email\":\"nicanorkyamba98@gmail.com\",\"currentDatetime\":\"2025-02-01T10:00:00Z\",\"githubUrl\":\"https://github.com/NICANORKYAMBA/hng12-backend-api\"}"));
+                .andExpect(content().json("{\"email\":\"ianmongi45@gmail.com\",\"currentDatetime\":\"2025-02-01T10:00:00Z\",\"githubUrl\":\"https://github.com/Ellyian/hng12-backend-api\"}"));
     }
 
     @Test
     public void testGetInfoWithDifferentGithubUrl() throws Exception {
-        Response response = new Response("nicanorkyamba98@gmail.com", "2025-01-30T09:30:00Z", "https://github.com/different/repo");
+        Response response = new Response("ianmongi45@gmail.com", "2025-01-30T09:30:00Z", "https://github.com/different/repo");
         when(apiService.getResponse()).thenReturn(response);
 
         mockMvc.perform(get("/api"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{\"email\":\"nicanorkyamba98@gmail.com\",\"currentDatetime\":\"2025-01-30T09:30:00Z\",\"githubUrl\":\"https://github.com/different/repo\"}"));
+                .andExpect(content().json("{\"email\":\"ianmongi45@gmail.com\",\"currentDatetime\":\"2025-01-30T09:30:00Z\",\"githubUrl\":\"https://github.com/different/repo\"}"));
     }
 
     @Test
