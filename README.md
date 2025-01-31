@@ -21,7 +21,7 @@ To run the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```
-   git clone https://github.com/NICANORKYAMBA/task-zero
+   git clone https://github.com/Ellyian/API-JAVA
    ```
 
 2. **Navigate to the project directory**:
@@ -60,9 +60,9 @@ The API will return a JSON response in the following format:
 
 ```json
 {
-  "email": "nicanorkyamba98@gmail.com",
+  "email": "ianmongi45@gmail.com",
   "current_datetime": "2025-01-30T09:30:00Z",
-  "github_url": "https://github.com/NICANORKYAMBA/task-zero"
+  "github_url": "https://github.com/Ellyian/API-JAVA"
 }
 ```
 
