@@ -15,6 +15,6 @@ public class ApiService {
         String current_datetime = ZonedDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
         String github_url = "https://github.com/Ellyian/API-JAVA";
 
-        return new Response(email, currentDatetime, githubUrl);
+        return new Response(email, current_datetime, github_url);
     }
 }
