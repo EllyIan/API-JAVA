@@ -12,8 +12,8 @@ public class ApiService {
 
     public Response getResponse() {
         String email = "ianmongi45@gmail.com@gmail.com";
-        String currentDatetime = ZonedDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
-        String githubUrl = "https://github.com/Ellyian/API-JAVA";
+        String current_datetime = ZonedDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'"));
+        String github_url = "https://github.com/Ellyian/API-JAVA";
 
         return new Response(email, currentDatetime, githubUrl);
     }
